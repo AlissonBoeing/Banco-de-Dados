@@ -1,0 +1,35 @@
+
+
+--- Usuario
+id_usuario | Nome 
+1;Alisson
+2;Nelson
+3;Guilherme
+4;Teles
+
+
+--- Usuario-Pedido
+id | id_usuario | id_produto | data  
+1;1;1;08/02/20,1:30
+2;4;2;09/02/20,2:30
+3;3;1;01/02/20,3:30
+4;2;2;10/02/20,4:30
+
+--- Produto 
+id_produto | tipo | valor 
+1;C;0.50
+2;L;1
+
+
+
+
+
+1) Em arquivos txt na cafeteira
+2) Uma tabela por arquivo, colunas separadas por ;
+3) Seria gerado um string formatada conforme o item 2.
+4) Ler os arquivos e armazenar em alguma estrutura de dado, percorrer Usuario-Pedido, e procurar o id_pedido em Pedido e incrementar um atributo conforme o valor deste pedido, para cada Usuário. 
+
+
+
+
+ 
