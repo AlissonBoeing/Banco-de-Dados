@@ -1,11 +1,11 @@
-
+Pos pago
 
 --- Usuario
-id_usuario | Nome 
-1;Alisson
-2;Nelson
-3;Guilherme
-4;Teles
+id_usuario | Nome | Stauts
+1;Alisson;Ativo
+2;Nelson;Ativo
+3;Guilherme;Ativo
+4;Teles;Ativo
 
 
 --- Usuario-Pedido
@@ -30,6 +30,14 @@ id_produto | tipo | valor
 4) Ler os arquivos e armazenar em alguma estrutura de dado, percorrer Usuario-Pedido, e procurar o id_pedido em Pedido e incrementar um atributo conforme o valor deste pedido, para cada Usuário. 
 
 
+Pre pago
 
+--- Usuario
+id_usuario | Nome | Status | Saldo
 
- 
+--- Usuario-Pedido
+id | id_usuario | id_produto | data/hora
+
+--- Produto
+id_produto | tipo | valor
+
